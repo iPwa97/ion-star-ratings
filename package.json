@@ -1,0 +1,41 @@
+{
+  "name": "ion-star-ratings",
+  "version": "1.0.8",
+  "peerDependencies": {
+    "@angular/common": "^16.0.0",
+    "@angular/core": "^16.0.0",
+    "@ionic/angular": "^7.0.7"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vc-rakesh/ion-star-ratings.git"
+  },
+  "keywords": [
+    "Ionic Star Rating Component",
+    "Ionic 7",
+    "Angular 16"
+  ],
+  "author": "Rakesh Sojitra <rakesh.sojitra@viitor.cloud>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vc-rakesh/ion-star-ratings/issues"
+  },
+  "homepage": "https://github.com/vc-rakesh/ion-star-ratings",
+  "module": "fesm2022/ion-star-ratings.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ion-star-ratings.mjs",
+      "esm": "./esm2022/ion-star-ratings.mjs",
+      "default": "./fesm2022/ion-star-ratings.mjs"
+    }
+  }
+}

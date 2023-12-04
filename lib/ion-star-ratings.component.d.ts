@@ -1,0 +1,32 @@
+import { EventEmitter, OnInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import * as i0 from "@angular/core";
+export declare class IonStarRatingsComponent implements ControlValueAccessor, OnInit {
+    private _rating;
+    private onChange;
+    private onTouched;
+    disabled: boolean;
+    ngOnInit(): void;
+    getIconColor(index: number): string;
+    getIconName(index: number): string;
+    writeValue(obj: number): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState?(isDisabled: boolean): void;
+    set rating(val: number);
+    get rating(): number;
+    ratingChanged: EventEmitter<number>;
+    readonly: boolean;
+    activeColor: string;
+    defaultColor: string;
+    activeIcon: string;
+    defaultIcon: string;
+    halfIcon: string;
+    halfStar: boolean;
+    maxRating: number;
+    fontSize: string;
+    iconsArray: number[];
+    changeRating(event: any): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<IonStarRatingsComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<IonStarRatingsComponent, "ion-star-ratings", never, { "rating": { "alias": "rating"; "required": false; }; "readonly": { "alias": "readonly"; "required": false; }; "activeColor": { "alias": "activeColor"; "required": false; }; "defaultColor": { "alias": "defaultColor"; "required": false; }; "activeIcon": { "alias": "activeIcon"; "required": false; }; "defaultIcon": { "alias": "defaultIcon"; "required": false; }; "halfIcon": { "alias": "halfIcon"; "required": false; }; "halfStar": { "alias": "halfStar"; "required": false; }; "maxRating": { "alias": "maxRating"; "required": false; }; "fontSize": { "alias": "fontSize"; "required": false; }; }, { "ratingChanged": "ratingChanged"; }, never, never, true, never>;
+}
